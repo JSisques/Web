@@ -14,11 +14,32 @@
 </head>
 
 <body>
-    <div class="bg"></div>
-    <div class="bg-text">
-        <p class="texto">Bajo construcción</p>
-        <p class="texto">Disculpen las molestias</p>
-    </div>
+
+    <header>
+
+        <div class="subHeader">
+            <img src="./img/paisaje2.jpg" alt="Foto perfil">
+        </div>
+
+    </header>
+
+    <nav>
+        <a href="#" id="openMenuBtn" class="openMenuBtn" onclick="openNav()">&#9776;</a>
+        <a href="#">Presentación</a>
+        <a href="#">Proyectos</a>
+        <a href="#">Sobre Mi</a>
+        <a href="#">Curriculum</a>
+    </nav>
+
+    <!-- Mobile menu -->
+    <nav class="mobileMenu" id="mobileMenu">
+        <a href="javascript:void(0)" class="closeMenubtn" onclick="closeNav()">&times;</a>
+        <a href="#" class="linkMobile">Presentación</a>
+        <a href="#" class="linkMobile">Proyectos</a>
+        <a href="#" class="linkMobile">Sobre Mi</a>
+        <a href="#" class="linkMobile">Curriculum</a>
+    </nav>
+
 </body>
 
 </html>
