@@ -102,6 +102,31 @@ nav a:hover {
     grid-template-columns: 25% 25% 25% 25%;
 }
 
+.progress-content {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.progress-bar {
+    /* Para mostrar el porcentaje a la derecha */
+    text-align: right;
+    /* Para centrar el contenido verticalmente */
+    padding-top: 10px;
+    /* Para centrar el contenido verticalmente */
+    padding-bottom: 10px;
+    padding-right: 10px;
+    color: white;
+    /* Tamaño inicial de todas las barras */
+    width: 0%;
+}
+
+.html {
+    animation-name: html;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    background-color: black;
+}
+
 
 /* PC */
 
@@ -126,9 +151,8 @@ nav a:hover {
     }
     .progress .progress-content {
         border: 1px solid black;
-        transform: rotate(-90deg);
     }
-    .progress .progress-content img {
+    .progress img {
         width: 170px;
         border: 1px solid black;
         border-radius: 999px;
@@ -153,9 +177,8 @@ nav a:hover {
     }
     .progress .progress-content {
         border: 1px solid black;
-        text-align: center;
     }
-    .progress .progress-content img {
+    .progress img {
         width: 170px;
         border: 1px solid black;
         border-radius: 999px;
@@ -176,5 +199,14 @@ nav a:hover {
     }
     .skills {
         display: block;
+    }
+}
+
+@keyframes html {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
     }
 }
