@@ -8,6 +8,7 @@ html {
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: brown;
 }
 
 header {
@@ -91,6 +92,35 @@ nav a:hover {
 .closeMenuBtn:hover {
     transition: 0.5s;
     transform: scale(1.25);
+}
+
+
+/* Contenido Skills*/
+
+.skills {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    margin: 30px auto;
+    border: 1px solid black;
+    padding: 1%;
+}
+
+.progress .progress-content {
+    border: 1px solid black;
+}
+
+.progress .progress-content img {
+    width: 170px;
+    border: 1px solid black;
+    border-radius: 999px;
 }
 
 
