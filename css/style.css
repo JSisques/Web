@@ -8,7 +8,7 @@ html {
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: brown;
+    background-color: white;
 }
 
 header {
@@ -25,7 +25,7 @@ header {
 
 nav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #262626;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -34,7 +34,7 @@ nav {
 nav a {
     float: left;
     display: block;
-    color: white;
+    color: #D8D8D8;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -46,8 +46,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #D8D8D8;
+    color: #0C0C0C;
 }
 
 
@@ -60,7 +60,7 @@ nav a:hover {
     z-index: 1;
     top: 0%;
     left: 0%;
-    background-color: #333;
+    background-color: #262626;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -85,8 +85,8 @@ nav a:hover {
 }
 
 .mobileMenu .linkMobile:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #D8D8D8;
+    color: #0C0C0C;
 }
 
 .closeMenuBtn:hover {
@@ -98,29 +98,8 @@ nav a:hover {
 /* Contenido Skills*/
 
 .skills {
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.progress {
-    display: inline-block;
-    width: 15%;
-    text-align: center;
-    margin: 30px auto;
-    border: 1px solid black;
-    padding: 1%;
-}
-
-.progress .progress-content {
-    border: 1px solid black;
-}
-
-.progress .progress-content img {
-    width: 170px;
-    border: 1px solid black;
-    border-radius: 999px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
 
@@ -137,12 +116,51 @@ nav a:hover {
         height: 100%;
         float: right;
     }
+    .progress {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin: 75px auto;
+        border: 1px solid black;
+        padding: 1%;
+    }
+    .progress .progress-content {
+        border: 1px solid black;
+        transform: rotate(-90deg);
+    }
+    .progress .progress-content img {
+        width: 170px;
+        border: 1px solid black;
+        border-radius: 999px;
+    }
 }
 
 
 /* Tablet */
 
-@media screen and (max-width: 900px) {}
+@media screen and (max-width: 992px) {
+    .skills {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .progress {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin: 50px auto;
+        border: 1px solid black;
+        padding: 1%;
+    }
+    .progress .progress-content {
+        border: 1px solid black;
+        text-align: center;
+    }
+    .progress .progress-content img {
+        width: 170px;
+        border: 1px solid black;
+        border-radius: 999px;
+    }
+}
 
 
 /* Smartphone */
@@ -155,5 +173,8 @@ nav a:hover {
     }
     nav a {
         display: none;
+    }
+    .skills {
+        display: block;
     }
 }
