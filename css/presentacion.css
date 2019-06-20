@@ -64,17 +64,15 @@ main {
 
 /* Smartphone */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 666px) {
     main {
         display: block;
     }
-    .contenedor-img-perfil {}
     .contenedor-img-perfil img {
         height: 300px;
         margin: 5% auto;
         border-radius: 999px;
     }
-    .contenedor-datosPersonales {}
     .contenedor-datosPersonales li {
         display: block;
         list-style: none;
