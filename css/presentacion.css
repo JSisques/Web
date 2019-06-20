@@ -1,55 +1,95 @@
 /* PC */
 
-@media only screen and (min-width: 992px) {
-    main {
-        display: grid;
-        grid-template-columns: 12.5% 35% 5% 35% 12.5%;
-    }
-    .contenedor-img-perfil {
-        grid-column: 2;
-        display: grid;
-        grid-template-rows: 5% 90% 5%;
-    }
-    .contenedor-img-perfil img {
-        height: 300px;
-        margin: 5% auto;
-        border-radius: 999px;
-        grid-row: 2;
-    }
-    .contenedor-datosPersonales {
-        grid-column: 4;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .contenedor-datosPersonales ol {}
-    .contenedor-datosPersonales ol li {
-        list-style: none;
-        margin: 1em;
-    }
-    .RRSS {
-        width: 64px;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .RRSS img {
-        width: 64px;
-    }
-    .contenido {
-        grid-column: 2 / 5;
-        padding: 5%;
-    }
+main {
+    display: grid;
+    grid-template-columns: 12.5% 35% 5% 35% 12.5%;
+}
+
+.contenedor-img-perfil {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 5% 90% 5%;
+}
+
+.contenedor-img-perfil img {
+    height: 300px;
+    margin: 5% auto;
+    border-radius: 999px;
+    grid-row: 2;
+}
+
+.contenedor-datosPersonales {
+    grid-column: 4;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor-datosPersonales li {
+    list-style: none;
+    margin: 0.5em;
+}
+
+.RRSS {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.RRSS img {
+    width: 64px;
+}
+
+.contenido {
+    grid-column: 2 / 5;
+    padding: 5%;
 }
 
 
 /* Tablet */
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    .RRSS {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+    .RRSS img {
+        width: 64px;
+    }
+}
 
 
 /* Smartphone */
 
-@media screen and (max-width: 400px) {}
+@media screen and (max-width: 400px) {
+    main {
+        display: block;
+    }
+    .contenedor-img-perfil {}
+    .contenedor-img-perfil img {
+        height: 300px;
+        margin: 5% auto;
+        border-radius: 999px;
+    }
+    .contenedor-datosPersonales {}
+    .contenedor-datosPersonales li {
+        display: block;
+        list-style: none;
+        text-align: center;
+    }
+    .RRSS {
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+    .RRSS img {
+        width: 64px;
+    }
+    .contenido {
+        padding: 10%;
+    }
+}
