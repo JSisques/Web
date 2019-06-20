@@ -7,13 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/skills.css">
 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./js/jquery.easypiechart.js"></script>
+    <script>
+        $(function() {
+            $('.chart').easyPieChart({
+                barColor: '#2C3E50',
+                animate: {
+                    duration: 2000,
+                    enabled: true
+                },
+                size: '200',
+                lineWidth: '10'
+            });
+        });
+    </script>
     <script src="./js/main.js"></script>
 
     <title>Document</title>
 </head>
 
-<body>
+<body onload="progressBar">
 
     <header>
         <div class="subHeader">
@@ -39,60 +55,8 @@
     </nav>
 
     <main class="skills">
-        <div class="progress" id="progress">
-            <img src="./img/skills/pythonLogo.png" alt="">
-            <div class="progress-content" id="progress-content">
-                <div class="progress-bar html">X</div>
-            </div>
-        </div>
-
-        <div class="progress" id="progress">
-            <img src="./img/skills/pythonLogo.png" alt="">
-            <div class="progress-content">
-                <div class="progress-bar css">X</div>
-            </div>
-        </div>
-
-        <div class="progress" id="progress">
-            <img src="./img/skills/pythonLogo.png" alt="">
-            <div class="progress-content">
-                <div class="progress-bar js">X</div>
-            </div>
-        </div>
-
-        <div class="progress" id="progress">
-            <img src="./img/skills/pythonLogo.png" alt="">
-            <div class="progress-content">
-                <div class="progress-bar js">X</div>
-            </div>
-        </div>
-
-        <div class="progress" id="progress">
-            <img src="./img/skills/pythonLogo.png" alt="">
-            <div class="progress-content" id="progress-content">
-                <div class="progress-bar js">X</div>
-            </div>
-        </div>
-
-        <div class="progress" id="progress">
-            <img src="./img/skills/pythonLogo.png" alt="">
-            <div class="progress-content" id="progress-content">
-                <div class="progress-bar js">X</div>
-            </div>
-        </div>
-
-        <div class="progress" id="progress">
-            <img src="./img/skills/pythonLogo.png" alt="">
-            <div class="progress-content" id="progress-content">
-                <div class="progress-bar js">X</div>
-            </div>
-        </div>
-
-        <div class="progress" id="progress">
-            <img src="./img/skills/pythonLogo.png" alt="">
-            <div class="progress-content" id="progress-content">
-                <div class="progress-bar js">X</div>
-            </div>
+        <div class="box">
+            <div class="chart" data-percent="70"><img class="logo" src="./img/skills/pythonLogo.png" alt=""></div>
         </div>
     </main>
 

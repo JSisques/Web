@@ -1,0 +1,36 @@
+/* PC */
+
+.skills .box {
+    border: 1px solid black;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills .box .chart .logo {
+    position: relative;
+    width: 150px;
+}
+
+.skills .box .chart {
+    position: relative;
+    width: 50%;
+}
+
+.skills .box canvas {
+    top: 0;
+    left: 0;
+}
+
+
+/* Tablet */
+
+@media screen and (max-width: 992px) {}
+
+
+/* Smartphone */
+
+@media screen and (max-width: 666px) {}
