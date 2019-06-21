@@ -17,6 +17,22 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+}
+
+.titulo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+
+.titulo h1 {
+    font-size: 50px;
 }
 
 nav {
