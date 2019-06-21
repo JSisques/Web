@@ -14,13 +14,9 @@ html {
 header {
     background-image: url("../img/paisaje.jpg");
     height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.subHeader {
-    display: none
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav {
@@ -64,83 +60,47 @@ nav a:hover {
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
 }
 
 .mobileMenu .linkMobile {
     display: block;
     color: white;
     text-align: center;
-    padding: 5%;
     text-decoration: none;
+    width: 100%;
 }
 
-.closeMenuBtn {
+.closeMenubtn {
     position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1% 7%;
+    float: right;
     font-size: 40px;
-    text-decoration: none;
+    display: block;
     color: white;
+    text-align: center;
+    width: 25%;
+    top: 2%;
+    right: 2%;
 }
 
-.mobileMenu .linkMobile:hover {
+.linkMobile:hover {
     background-color: #D8D8D8;
     color: #0C0C0C;
 }
 
-.closeMenuBtn:hover {
+.mobileMenu .closeMenuBtn:hover {
     transition: 0.5s;
     transform: scale(1.25);
-}
-
-
-/* Contenido Skills*/
-
-.skills {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-}
-
-.progress-content {
-    width: 100%;
-    background-color: #ddd;
-}
-
-.progress-bar {
-    /* Para mostrar el porcentaje a la derecha */
-    text-align: right;
-    /* Para centrar el contenido verticalmente */
-    padding-top: 10px;
-    /* Para centrar el contenido verticalmente */
-    padding-bottom: 10px;
-    padding-right: 10px;
-    color: white;
-    /* Tamaño inicial de todas las barras */
-    width: 0%;
-}
-
-.html {
-    animation-name: html;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    background-color: black;
 }
 
 
 /* PC */
 
 @media only screen and (min-width: 992px) {
-    .subHeader {
-        display: inline-block;
-        background-color: skyblue;
-        height: 60%;
-        width: 70%;
-    }
-    .subHeader img {
-        height: 100%;
-        float: right;
-    }
     .progress {
         display: inline-block;
         width: 100%;
@@ -162,28 +122,7 @@ nav a:hover {
 
 /* Tablet */
 
-@media screen and (max-width: 992px) {
-    .skills {
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-    .progress {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-        margin: 50px auto;
-        border: 1px solid black;
-        padding: 1%;
-    }
-    .progress .progress-content {
-        border: 1px solid black;
-    }
-    .progress img {
-        width: 170px;
-        border: 1px solid black;
-        border-radius: 999px;
-    }
-}
+@media screen and (max-width: 992px) {}
 
 
 /* Smartphone */
@@ -196,17 +135,5 @@ nav a:hover {
     }
     nav a {
         display: none;
-    }
-    .skills {
-        display: block;
-    }
-}
-
-@keyframes html {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 50%;
     }
 }

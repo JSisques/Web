@@ -1,3 +1,17 @@
+function openNav() {
+    //Podemos modificar las propiedades del elemento de esta forma
+    var menu = document.getElementById("mobileMenu");
+    menu.style.width = "100%";
+    menu.style.backgroundColor = "rgb(38,38,38,0.9)";
+    //Escondemos el boton hamburguesa al abrir el menu
+    document.getElementById("openMenuBtn").style.display = "none";
+}
+
+function closeNav() {
+    document.getElementById("mobileMenu").style.width = "0";
+    document.getElementById("openMenuBtn").style.display = "block";
+}
+
 function escribirEdadActual() {
     var fecha = new Date();
     var fechaActual = parseInt(fecha.getFullYear());
