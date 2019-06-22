@@ -1,28 +1,95 @@
 /* PC */
 
-.skills .box {
-    border: 1px solid black;
-    text-align: center;
-    height: 400px;
+main .container {
+    width: 100%;
+    height: 25%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
-.skills .box .chart .logo {
-    position: relative;
-    width: 150px;
+main .container img {
+    width: 250px;
+    margin: 1% 0;
 }
 
-.skills .box .chart {
-    position: relative;
+main .container.estilo1 {
+    background-color: white;
+}
+
+main .container.estilo2 {
+    background-color: #D8D8D8;
+}
+
+main .container .container-progress {
     width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
 }
 
-.skills .box canvas {
-    top: 0;
-    left: 0;
+main .container .container-progress .progress {
+    width: 100%;
+    height: 50px;
+    margin: 3% 0;
+}
+
+main .container .container-progress .progress .progress-bar {
+    width: 0%;
+    height: 100%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.java {
+    animation-name: java;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    background-color: #D8D8D8;
+}
+
+.sql {
+    animation-name: sql;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    background-color: white;
+}
+
+.html {
+    animation-name: html;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    background-color: #D8D8D8;
+}
+
+.css {
+    animation-name: css;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    background-color: white;
+}
+
+.js {
+    animation-name: js;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    background-color: #D8D8D8;
+}
+
+.python {
+    animation-name: python;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    background-color: white;
 }
 
 
@@ -33,13 +100,87 @@
 
 /* Smartphone */
 
-@media screen and (max-width: 666px) {}
+@media screen and (max-width: 666px) {
+    main .container {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+    }
+    main .container img {
+        width: 250px;
+        margin: 5% 0;
+    }
+    main .container .container-progress {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    main .container .container-progress .progress {
+        height: 30px;
+    }
+    main .container .container-progress .progress .progress-bar {
+        font-size: 20px;
+    }
+}
+
+@keyframes java {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 75%;
+    }
+}
+
+@keyframes sql {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 65%;
+    }
+}
 
 @keyframes html {
     from {
         width: 0%;
     }
     to {
+        width: 70%;
+    }
+}
+
+@keyframes css {
+    from {
+        width: 0%;
+    }
+    to {
         width: 50%;
+    }
+}
+
+@keyframes js {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+@keyframes python {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 20%;
     }
 }
