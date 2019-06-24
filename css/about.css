@@ -1,0 +1,16 @@
+.titulo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.titulo h2 {
+    width: 100%;
+    color: red;
+}
+
+.titulo hr {
+    width: 40%;
+}
